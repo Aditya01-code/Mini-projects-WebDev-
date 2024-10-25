@@ -1,0 +1,165 @@
+<!-- i have done it in VS code first -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 id="title" class="text-center">Roadtrip Survey Form</h1>
+            <p id="description" class="description text-center">
+                Thank you for taking the time to help us improve the platform
+            </p>
+        </header>
+        <form id="survey-form">
+            <div class="form-group">
+                <label for="name-label" for="name">Name</label>
+                <input 
+                type="text"
+                name="name"
+                id="name"
+                class="form-control"
+                placeholder="Enter your name"
+                required
+                />
+            </div>
+            <div class="form-group">
+                <label for="email-label" for="email">Email</label>
+                <input 
+                type="email"
+                name="email"
+                id="email"
+                class="form-control"
+                placeholder="Enter your email"
+                required
+                />
+            </div>
+            <div class="form-group">
+                <label for="number-label" for="Number">Age</label>
+                <input 
+                type="number"
+                name="age"
+                id="number"
+                min="10"
+                max="99"
+                class="form-control"
+                placeholder="Age"
+                required
+                />
+            </div>
+            <div class="form-group">
+                <p>What will you do in your road trip?</p>
+                <select name="trip" id="dropdown" class="form-control" required >
+                    <option disabled selected value>Select your type</option>
+                    <option value="Sightseeing">Sightseeing</option>
+                    <option value="Camping">Camping</option>
+                    <option value="Hiking">Hiking</option>
+                    <option value="Dining">Dining</option>
+                    <option value="Exploring Local Culture">Exploring Local Culture</option>
+                    <option value="Relaxing">Relaxing</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <p>Would you like hire an Guider?</p>
+                <label>
+                    <input 
+                    type="radio"
+                    name="user-choice"
+                    value="not-sure"
+                    class="input-radio"
+                    checked
+                    />Not sure</label>
+                <label>
+                    <input 
+                    type="radio"
+                    name="user-choice"
+                    value="no"
+                    class="input-radio"
+                    />No</label>
+                <label>
+                    <input 
+                    type="radio"
+                    name="user-choice"
+                    value="yes"
+                    class="input-radio"
+                    />Yes</label>  
+            </div>
+            
+            <div class="form-group">
+                <label>What requirements do you need from us?</label>
+                
+                <label>
+                    <input type="checkbox" id="bus" name="requirements" value="bus" class="input-checkbox">
+                    Bus Transportation
+                </label>
+            
+                <label>
+                    <input type="checkbox" id="economy_plane" name="requirements" value="economy_plane" class="input-checkbox">
+                    Economy Airplane
+                </label>
+            
+                <label>
+                    <input type="checkbox" id="luxury_plane" name="requirements" value="luxury_plane" class="input-checkbox">
+                    Luxury Airplane
+                </label>
+            
+                <label>
+                    <input type="checkbox" id="refreshments" name="requirements" value="refreshments" class="input-checkbox">
+                    Refreshments
+                </label>
+            
+                <label>
+                    <input type="checkbox" id="accommodation" name="requirements" value="accommodation" class="input-checkbox">
+                    Accommodation
+                </label>
+            
+                <label>
+                    <input type="checkbox" id="itinerary_planning" name="requirements" value="itinerary_planning" class="input-checkbox">
+                    Itinerary Planning
+                </label>
+            
+                <label>
+                    <input type="checkbox" id="guided_tours" name="requirements" value="guided_tours" class="input-checkbox">
+                    Guided Tours
+                </label>
+            
+                <label>
+                    <input type="checkbox" id="travel_insurance" name="requirements" value="travel_insurance" class="input-checkbox">
+                    Travel Insurance
+                </label>
+            
+                <label>
+                    <input type="checkbox" id="luggage_assistance" name="requirements" value="luggage_assistance" class="input-checkbox">
+                    Luggage Assistance
+                </label>
+            
+                <label>
+                    <input type="checkbox" id="emergency_support" name="requirements" value="emergency_support" class="input-checkbox">
+                    Emergency Support
+                </label>
+            </div>
+            <div class="form-group">
+                <p>Any comments or suggestions?</p>
+                <textarea
+                  id="comments"
+                  class="input-textarea"
+                  name="comment"
+                  placeholder="Enter your comment here..."
+                ></textarea>
+              </div>
+            <div class="form-group">
+          <button type="submit" id="submit" class="submit-button">
+            Submit
+          </button>
+        </div>
+
+        </form>
+
+    </div>
+</body>
+</html>

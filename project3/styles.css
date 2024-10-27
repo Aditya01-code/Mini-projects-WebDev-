@@ -1,0 +1,50 @@
+html,
+body {
+  min-width: 290px;
+  color: #4d4e53;
+  background-color: #ffffff;
+  font-family: 'Open Sans', Arial, sans-serif;
+  line-height: 1.5;
+}
+
+
+
+#navbar{
+position: fixed;
+top: 0;
+left: 0;
+min-width: 290px;
+width: 300px;
+height: 100%;
+border-right: solid rgba(0,22,22,0.4);
+}
+
+header{
+    color: black;
+    text-align: center;
+    margin: 10px;
+    font-size: 1.75rem;
+}
+
+#navbar ul{
+    height: 88%;
+    padding: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+#navbar li{
+    width: 100%;
+    color: rgba(12, 17, 17, 0.4);
+    list-style: none;
+    border-top: 1px solid;
+    position: relative;
+}
+
+#navbar a{
+    display: block;
+    padding: 10px 30px;
+    text-decoration: none;
+    color: #4d4e53;
+    cursor: pointer;
+}

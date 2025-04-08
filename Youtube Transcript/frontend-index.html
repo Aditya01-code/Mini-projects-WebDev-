@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Transcript Viewer</title>
+    <link rel="stylesheet" href="/frontend-css.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-container">
+            <div class="logo">
+                <img src="/api/placeholder/40/40" alt="Logo" class="logo-img">
+                <span class="logo-text">TranscriptHub</span>
+            </div>
+            <div class="header-right">
+                <button id="themeToggle" class="theme-toggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+    <div class="animated-line-container">
+        <div class="animated-line"></div>
+    </div>
+
+    <main class="main-content">
+        <div class="container">
+            <h1>YouTube Transcript Viewer</h1>
+            <p class="app-description">Enter a YouTube video URL or ID to view its transcript from captions.</p>
+            
+            <div class="input-group">
+                <input type="text" id="videoInput" placeholder="Enter YouTube URL or ID (e.g., dQw4w9WgXcQ)">
+                <button id="fetchBtn">Get Transcript</button>
+            </div>
+            <p class="example">Examples: 
+                <br>Full URL: https://www.youtube.com/watch?v=dQw4w9WgXcQ 
+                <br>Short URL: https://youtu.be/dQw4w9WgXcQ
+                <br>Video ID: dQw4w9WgXcQ
+            </p>
+            
+            <div id="preview"></div>
+            <div id="transcript"></div>
+            
+            <div id="recentVideos" class="recent-videos">
+                <!-- Recent videos will be added here via JavaScript -->
+            </div>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <nav class="footer-nav">
+                <ul>
+                    <li><a href="#"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="#"><i class="fas fa-video"></i> Video Conference</a></li>
+                    <li><a href="#"><i class="fas fa-sticky-note"></i> Notes</a></li>
+                    <li><a href="#"><i class="fas fa-robot"></i> AI Chat</a></li>
+                    <li><a href="#"><i class="fas fa-info-circle"></i> About</a></li>
+                </ul>
+            </nav>
+            <div class="copyright">
+                &copy; 2025 TranscriptHub - All rights reserved
+            </div>
+        </div>
+    </footer>
+
+    <script src="/frontend-js.js"></script>
+</body>
+</html>

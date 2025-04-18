@@ -1,0 +1,145 @@
+<!-- your title is firework related, you have to display the shiping procedure in large, medium, small packs with specified price   -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Firework Shop</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+   <div class="video-wrapper">
+    <video id="video-play" autoplay loop muted>
+        <source src="https://cdn.pixabay.com/video/2023/08/11/175579-853849692_tiny.mp4" type="video/mp4">
+    </video>
+</div>
+
+    <div class="page-wrapper">
+        <header id="header">
+            <div class="logo">
+                <img id="header-img" src="https://fireworksinternational.co.uk/wp-content/uploads/2017/08/logo.jpg" alt="logo">
+            </div>
+            <nav id="nav-bar">
+                <ul class="ul-1">
+                    <li ><a class="nav-link" href="#features">Features</a></li>
+                    <li ><a class="nav-link" href="#tutorial">How to light it</a></li>
+                    <li ><a class="nav-link" href="#list-level">Pricing</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="hero">
+            <p class="title"> Expertly Crafted, Global Availability, Express Shipping</p>
+            <form class="form-container" action="https://www.freecodecamp.com/email-submit">
+                <input type="email" name="email"  id="email" placeholder="Enter your email">
+                <input type="submit" id="submit" value="LET'S BOOM!">
+            </form>
+        </div>
+        <div class="container-grid">
+            <section id="features">
+
+                <div class="feature-box">
+                    <svg class="icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path fill="rgb(248, 183, 6)" d="M116.7 33.8c4.5-6.1 11.7-9.8 19.3-9.8l240 0c7.6 0 14.8 3.6 19.3 9.8l112 152c6.8 9.2 6.1 21.9-1.5 30.4l-232 256c-4.5 5-11 7.9-17.8 7.9s-13.2-2.9-17.8-7.9l-232-256c-7.7-8.5-8.3-21.2-1.5-30.4l112-152zm38.5 39.8c-3.3 2.5-4.2 7-2.1 10.5l57.4 95.6L63.3 192c-4.1 .3-7.3 3.8-7.3 8s3.2 7.6 7.3 8l192 16c.4 0 .9 0 1.3 0l192-16c4.1-.3 7.3-3.8 7.3-8s-3.2-7.6-7.3-8L301.5 179.8l57.4-95.6c2.1-3.5 1.2-8.1-2.1-10.5s-7.9-2-10.7 1L256 172.2 165.9 74.6c-2.8-3-7.4-3.4-10.7-1z"/>
+                    </svg>
+                    <div class="wrap-vertical">
+                        <h2 class="feature-names">Premium Quality Fireworks</h2>
+                        <p class="text">We import high-quality firework materials from China, known for affordability and variety, and Europe, renowned for artistic designs and innovative effects.</p>
+                    </div>
+                </div>
+                
+                <div class="feature-box">
+                    <svg class="icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+                        <path fill="rgb(248, 183, 6)" d="M36.8 192l566.3 0c20.3 0 36.8-16.5 36.8-36.8c0-7.3-2.2-14.4-6.2-20.4L558.2 21.4C549.3 8 534.4 0 518.3 0L121.7 0c-16 0-31 8-39.9 21.4L6.2 134.7c-4 6.1-6.2 13.2-6.2 20.4C0 175.5 16.5 192 36.8 192zM64 224l0 160 0 80c0 26.5 21.5 48 48 48l224 0c26.5 0 48-21.5 48-48l0-80 0-160-64 0 0 160-192 0 0-160-64 0zm448 0l0 256c0 17.7 14.3 32 32 32s32-14.3 32-32l0-256-64 0z"/>
+                    </svg>
+                    <div class="wrap-vertical">
+                        <h2 class="feature-names">Easy Online Shopping</h2>
+                        <p class="text">Order fireworks easily online or visit our dedicated stores in major cities for a seamless shopping experience tailored to your needs.</p>
+                    </div>
+                </div>
+                
+                <div class="feature-box">
+                    <svg class="icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                        <path fill="rgb(248, 183, 6)" d="M499.6 11.3c6.7-10.7 20.5-14.5 31.7-8.5s15.8 19.5 10.6 31L404.8 338.6c2.2 2.3 4.3 4.7 6.3 7.1l97.2-54.7c10.5-5.9 23.6-3.1 30.9 6.4s6.3 23-2.2 31.5l-87 87-71.4 0c-13.2-37.3-48.7-64-90.5-64s-77.4 26.7-90.5 64l-79.6 0L42.3 363.7c-9.7-6.7-13.1-19.6-7.9-30.3s17.4-15.9 28.7-12.4l97.2 30.4c3-3.9 6.1-7.7 9.4-11.3L107.4 236.3c-6.1-10.1-3.9-23.1 5.1-30.7s22.2-7.5 31.1 .1L246 293.6c1.5-.4 3-.8 4.5-1.1l13.6-142.7c1.2-12.3 11.5-21.7 23.9-21.7s22.7 9.4 23.9 21.7l13.5 141.9L499.6 11.3zM64 448s0 0 0 0l448 0s0 0 0 0l32 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 512c-17.7 0-32-14.3-32-32s14.3-32 32-32l32 0zM288 0c13.3 0 24 10.7 24 24l0 48c0 13.3-10.7 24-24 24s-24-10.7-24-24l0-48c0-13.3 10.7-24 24-24z"/>
+                    </svg>
+                    <div class="wrap-vertical">
+                        <h2 class="feature-names">Safe & Certified Explosives</h2>
+                        <p class="text">We prioritize safety, offering certified fireworks that meet strict industry regulations, ensuring a thrilling yet secure experience for every celebration.</p>
+                    </div>
+                </div>
+                
+                <div class="feature-box">
+                    <svg class="icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+                        <path fill="rgb(248, 183, 6)" d="M48 0C21.5 0 0 21.5 0 48L0 368c0 26.5 21.5 48 48 48l16 0c0 53 43 96 96 96s96-43 96-96l128 0c0 53 43 96 96 96s96-43 96-96l32 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l0-64 0-32 0-18.7c0-17-6.7-33.3-18.7-45.3L512 114.7c-12-12-28.3-18.7-45.3-18.7L416 96l0-48c0-26.5-21.5-48-48-48L48 0zM416 160l50.7 0L544 237.3l0 18.7-128 0 0-96zM112 416a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm368-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"/>
+                      </svg>
+                      
+                    <div class="wrap-vertical">
+                        <h2 class="feature-names">Fast & Reliable Delivery</h2>
+                        <p class="text">Enjoy swift delivery with guaranteed reliability—returns are only accepted with video proof to maintain product integrity and customer satisfaction.</p>
+                    </div>
+                </div>
+                
+            </section>
+        </div>
+        <div id="tutorial" class="container-video">
+            <section id="video">
+                <iframe  id="video"
+                src="https://www.youtube.com/embed/2OLC51rzLSI" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+                </iframe>
+            </section>
+        </div>
+        <div id="list-level">
+            <div class="levels">
+                <h2 id="level-name">Industrial Grade</h2>
+                <div id="lists">
+                <p class="naming-lists">Sky Bloom Fountain – $150 - $250</p>
+                <p class="naming-lists">Thunder Cascade – $300 - $500</p>
+                <p class="naming-lists">Mega Burst Barrage – $600 - $800</p>
+                <p class="naming-lists">Neon Skyline Shells – $900 - $1,200</p>
+                </div>
+            </div>
+            <div class="levels">
+                <h2 id="level-name">Elite Grade</h2>
+                <div id="lists">
+                <p class="naming-lists">Diamond Rain Blasters – $250 - $400</p>
+                <p class="naming-lists">Phoenix Wings Aerial Show – $450 - $700</p>
+                <p class="naming-lists">Titanium Thunder Rolls – $800 - $1,000</p>
+                <p class="naming-lists">Starlight Explosion Cakes – $1,200 - $1,500</p>
+                </div>
+            </div>
+            <div class="levels military-box">
+                <h2 id="level-name">
+                    Military Grade ??
+                    <span class="hover-text">Totally not for actual combat... or is it?</span>
+                </h2>
+                <div id="lists">
+                    <p class="naming-lists">Rocket Launcher 9000 – $2,000</p>
+                    <p class="naming-lists">Grenade Popper X – $2,500</p>
+                    <p class="naming-lists">Tactical Nuke Barrage – $3,500</p>
+                    <p class="naming-lists">Artillery Overkill Pack – $5,000</p>
+                </div>
+            </div>
+            
+        </div>
+        <div id="delete">
+        <video src="deezs" id="video"></video>
+        </div>
+
+        <footer id="footer">
+            <div class="footer-links">
+                <a href="#header" id="flinks">Privacy</a>
+                <a href="#header" id="flinks">Terms</a>
+                <a href="#header" id="flinks">Contacts</a>
+            </div>
+            <p id="copyright">copyright 2025, Fireworks international</p>
+        </footer>
+        
+ 
+    </div>
+
+</body>
+</html>
